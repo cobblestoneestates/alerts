@@ -1,24 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stay Updated</title>
-    
-    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-    <script>
-      window.OneSignal = window.OneSignal || [];
-      OneSignal.push(function() {
-        OneSignal.init({
-          appId: "9f938d69-3094-456f-96fd-00a28e147e45",
-          serviceWorkerPath: "alerts/OneSignalSDKWorker.js", 
-          serviceWorkerParam: { scope: "/alerts/" }
-        });
-      });
-    </script>
-</head>
-<body style="font-family: Arial, sans-serif; text-align: center; margin-top: 100px; background-color: #f4f4f9;">
-    <h1>Cobblestone HOA Updates</h1>
-    <p>Click the bell icon or the prompt to subscribe to live alerts.</p>
-</body>
-</html>
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "9f938d69-3094-456f-96fd-00a28e147e45",
+    });
+  });
+</script>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay Updated</title>
+    
+    <!-- paste your specific OneSignal Script Block Right Here -->
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+    <script>
+      window.OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "https://cobblestoneestates.github.io/alerts/",
+        });
+      });
+    </script>
+</head>
+<body style="font-family: Arial, sans-serif; text-align: center; margin-top: 100px;">
+    <h1>Notification Dashboard</h1>
+    <p>Click the bell icon or the prompt to subscribe to live alerts.</p>
+</body>
+</html>

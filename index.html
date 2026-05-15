@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stay Updated</title>
     
-    <!-- paste your specific OneSignal Script Block Right Here -->
     <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
     <script>
       window.OneSignal = window.OneSignal || [];
       OneSignal.push(function() {
         OneSignal.init({
-          appId: "https://cobblestoneestates.github.io/alerts/",
+          appId: "9f938d69-3094-456f-96fd-00a28e147e45",
+          serviceWorkerPath: "OneSignalSDKWorker.js", 
+          serviceWorkerParam: { scope: "/alerts/" }
         });
       });
     </script>
 </head>
-<body style="font-family: Arial, sans-serif; text-align: center; margin-top: 100px;">
-    <h1>Cobblestone HOA</h1>
-    <p>Click the bell icon or the prompt to subscribe to live website alerts.</p>
+<body style="font-family: Arial, sans-serif; text-align: center; margin-top: 100px; background-color: #f4f4f9;">
+    <h1>Cobblestone HOA Updates</h1>
+    <p>Click the bell icon or the prompt to subscribe to live alerts.</p>
 </body>
 </html>
